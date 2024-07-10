@@ -1,0 +1,103 @@
+.most-visited-places {
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.most-visited-places h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.place-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.place-cards::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+.place-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.place-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.place-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.place-card:hover .place-image img {
+  transform: scale(1.1);
+}
+
+.place-card h4 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.place-card p {
+  margin-top: 5px;
+  color: #555;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .place-cards {
+    gap: 10px;
+  }
+  .arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .place-card {
+    width: 180px;
+  }
+
+  .most-visited-places {
+    padding: 20px 10px;
+  }
+}
