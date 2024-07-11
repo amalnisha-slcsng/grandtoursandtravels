@@ -14,7 +14,7 @@ const PerDayRentalComponent = () => {
                 <img src={perDayImage} alt="Per Day Rental Package" />
                 <p><strong>Rent per Day:</strong> Rs. 1500</p>
                 <p><strong>Kilometer Limit:</strong> 10 km</p>
-                <p><strong>Additional Charges:</strong> Toll and Parking (Extra)</p>
+                <p><strong>Additional Charges:</strong> Toll and Parking </p>
                 <button className="book-now-button" onClick={handleBookNowClick}>Book Now</button>
             </div>
         </div>
