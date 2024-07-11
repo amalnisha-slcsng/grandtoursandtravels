@@ -32,7 +32,7 @@ const Footer = () => {
             <a href="https://facebook.com"><i className="fab fa-facebook-f"></i></a>
             <a href="https://whatsapp.com"><i className="fab fa-whatsapp"></i></a>
             <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
-            <a href="grandtravelsmadurai@gmail.com"><i className="fas fa-envelope"></i></a>
+            <a href="/"><i className="fas fa-envelope"></i></a>
           </div>
         </div>
       </div>
