@@ -20,49 +20,59 @@
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25); /* Reapply box-shadow for consistency */
 }
 
-/* Add other Navbar styles here */
 .navbar-logo {
   color: #222;
   font-size: 2rem;
   cursor: pointer;
-}
-
-.navbar-logo {
   display: flex;
   align-items: center;
 }
 
 .logo-img {
-  display: none; /* Hide by default */
+  display: inline-block;
+  max-width: 120px;
+  margin-right: 10px;
 }
 
 .highlight {
-  font-weight: bold; /* Make the text bold */
-  font-size: 1.2em; /* Adjust font size */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.nav-title {
+  font-size: 1.2em;
+}
+
+.large-screen-only {
+  display: inline-block;
+}
+
+@media (min-width: 769px) {
+  .large-screen-only {
+    display: flex;
+    align-items: center;
+  }
+
+  /* .logo-img {
+    display: none; Commented out this rule to show the logo on large screens
+    max-width: 120px; 
+  } */
 }
 
 @media (max-width: 768px) {
-  /* Adjust max-width as needed for mobile screens */
   .navbar-logo {
     justify-content: center; /* Center align on mobile */
-  }
-
-  .navbar-logo .highlight {
-    display: none; /* Hide text highlight on mobile */
   }
 
   .logo-img {
     display: inline-block; /* Show logo on mobile */
     max-width: 120px; /* Adjust max-width as per your design */
   }
-}
 
-.navbar-logo .highlight {
-  font-weight: bold;
-  color: #0c6d70;
-  margin-left: 2px;
-  margin-right: 3px;
-  /* Dodger Blue */
+  .highlight,
+  .nav-title {
+    display: none; /* Hide text highlight and title on mobile */
+  }
 }
 
 .menu-icons {

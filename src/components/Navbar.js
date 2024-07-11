@@ -15,7 +15,11 @@ const Navbar = ({ sticky }) => {
     <nav className={`NavbarItems ${sticky ? 'scrolled' : ''}`}>
       <div className="navbar-logo">
         <img src={logo} alt="Grand Tours & Travels Logo" className="logo-img" />
-        <span className="highlight large-screen-only"> GRAND </span>Tours & Travels 
+        <div className="large-screen-only">
+  
+          <span className="highlight" style={{color:"#0c6d70",padding:"4px"}}>GRAND</span>
+          <span className="nav-title">Tours & Travels</span>
+        </div>
       </div>
       <div className="menu-icons" onClick={handleClick}>
         <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>

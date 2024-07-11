@@ -36,10 +36,10 @@
 .hero-text h1 {
   font-size: 3rem;
   font-weight: 800;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
   padding: 5px 10px; /* Adjusted padding */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  border-radius: 5px; /* Rounded corners */
+  color: #222; /* Adjusted text color */
 }
 
 .hero-text p {
@@ -50,30 +50,61 @@
 
 .hero-text .show {
   text-decoration: none;
-  background-color:  #0C6D70;
+  background-color: #0C6D70;
   padding: 1rem 2rem;
   border-radius: 6px;
   font-size: 1.1rem;
   font-weight: bold;
   letter-spacing: 2px;
-  color: black;
+  color: #fff; /* Changed to white for better contrast */
+  transition: background-color 0.3s ease;
 }
 
-.hero-text a:hover {
+.hero-text .show:hover {
   background-color: #0a8488;
 }
 
-@media screen and (max-width: 555px) {
-  .hero-text h1 {
-    padding: 10px 20px;
+@media screen and (max-width: 768px) {
+  .hero-mid {
+    height: 60vh; /* Adjust height for medium screens */
   }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    padding: 5px 10px;
+  }
+  
   .hero-text p {
     font-size: 1.1rem;
+  }
+  
+  .hero-text .show {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .hero-mid {
+    height: 50vh; /* Adjust height for small screens */
+  }
+
+  .hero-text {
+    top: 50%; /* Adjust position */
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    padding: 10px 20px;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
     padding: 0 0 2rem 0;
   }
+
   .hero-text .show {
-    padding: 0.6em 1.1rem;
-    border-radius: 6px;
-    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
   }
 }

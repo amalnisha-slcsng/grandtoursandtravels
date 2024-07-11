@@ -13,7 +13,6 @@ const OutstationPackageComponent = () => {
                 <h2>Outstation Package</h2>
                 <img src={outstationImage} alt="Outstation Package" />
                 <p><strong>A/C:</strong> Rs. 14 per km</p>
-                <p><strong>Non A/C:</strong> Rs. 13 per km</p>
                 <p><strong>Driving Batta:</strong> Rs. 300</p>
                 <p><strong>Additional Charges:</strong> Toll and Parking (Extra)</p>
                 <button className="book-now-button" onClick={handleBookNowClick}>Book Now</button>

@@ -18,7 +18,7 @@ const Home = () => {
         heroImg={HeroImg}
         title="Explore and Enjoy Your Trips"
         text="Discover amazing destinations with Grand Tours and Travels."
-        buttonText="Travel Plan"
+        buttonText="Travel Package"
         url="/"
         btnClass="show"
       />
