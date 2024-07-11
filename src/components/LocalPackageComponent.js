@@ -4,7 +4,7 @@ import './TravelplanStyles.css'; // Import styles
 
 const LocalPackageComponent = () => {
     const handleBookNowClick = () => {
-        window.location.href = "https://wa.me/?text=I'm%20interested%20in%20the%20local%20package!";
+        window.location.href = "https://wa.me/7598283292?text=I'm%20interested%20in%20the%20local%20package!";
     };
 
     return (
