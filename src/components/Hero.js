@@ -1,14 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './Herostyles.css'; 
 
 const Hero = (props) => {
+  const { cName, heroImg, title, text, buttonText, btnClass } = props; // Destructure props
+
   return (
-    <div className={props.cName}>
-      <img src={props.heroImg} alt="Hero" /> {/* Use props.heroImg */}
+    <div className={cName}>
+      <img src={heroImg} alt="Hero" /> {/* Use props.heroImg */}
       <div className='hero-text'>
-        <h1>{props.title}</h1>
-        <p>{props.text}</p>
-        <a href={props.url} className={props.btnClass}>{props.buttonText}</a>
+        <h1>{title}</h1>
+        <p>{text}</p>
+        <Link to="/travel-plan" className={btnClass}>{buttonText}</Link> {/* Use Link component */}
       </div>
     </div>
   );

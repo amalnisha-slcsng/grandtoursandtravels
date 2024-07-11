@@ -1,85 +1,79 @@
 .hero {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    height: 100vh; /* Adjusted to full viewport height */
-    overflow: hidden;
-  }
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
 
-  .hero-mid{
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    height: 70vh; /* Adjusted to full viewport height */
-    overflow: hidden;
+.hero-mid {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 70vh; /* 70% of viewport height */
+  overflow: hidden;
+}
 
-  }
+.hero-mid h1 {
+  padding-top: 2rem; /* Adjusted padding */
+}
 
-  .hero-mid h1{
-    padding-top: 4rem !important;
-    
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  }
-  
-  .hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .hero-text {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center; /* Center text */
-  }
-  
+.hero-text {
+  position: absolute;
+  top: 45%; /* Adjusted from 55% to 45% */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center; /* Center text */
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background-color: #fff;
+  padding: 5px 10px; /* Adjusted padding */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 0.5rem 0 2rem;
+}
+
+.hero-text .show {
+  text-decoration: none;
+  background-color:  #0C6D70;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.hero-text a:hover {
+  background-color: #0a8488;
+}
+
+@media screen and (max-width: 555px) {
   .hero-text h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    background-color: #fff;
-    padding: 10px 20px; 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+    padding: 10px 20px;
   }
-  
   .hero-text p {
-    font-size: 1.3rem;
-    color: #fff;
-    padding: 0.5rem 0 2rem;
-  }
-  
-  .hero-text .show {
-    text-decoration: none;
-    background-color: #0eb5bb;
-    padding: 1rem 2rem;
-    border-radius: 6px;
     font-size: 1.1rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: black;
+    padding: 0 0 2rem 0;
   }
-  
-  .hero-text a:hover {
-    background-color: #12dad0;
+  .hero-text .show {
+    padding: 0.6em 1.1rem;
+    border-radius: 6px;
+    font-size: 1rem;
   }
-  
-  
-  @media screen and (max-width: 555px) {
-    .hero-text h1 {
-      padding: 10px 20px;
-    }
-    .hero-text p {
-      font-size: 1.1rem;
-      padding: 0 0 2rem 0;
-    }
-    .hero-text .show {
-      padding: 0.6em 1.1rem;
-      border-radius: 6px;
-      font-size: 1rem;
-    }
-  }
-  
+}

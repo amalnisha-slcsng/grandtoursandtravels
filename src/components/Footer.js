@@ -17,21 +17,22 @@ const Footer = () => {
         <div className="footer-section links">
           <h2 className="footer-title">Quick Links</h2>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#packages">About </a></li>
-            <li><a href="#about">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
 
         <div className="footer-section contact">
           <h2 className="footer-title">Contact Us</h2>
-          <p>Email: info@grandtoursandtravels.com</p>
-          <p>Phone: +123-456-7890</p>
+          <p>Email: grandtravelsmadurai@gmail.com</p>
+          <p>Phone: +91 7598283292</p>
           <div className="socials">
             <a href="https://facebook.com"><i className="fab fa-facebook-f"></i></a>
             <a href="https://whatsapp.com"><i className="fab fa-whatsapp"></i></a>
             <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
+            <a href="grandtravelsmadurai@gmail.com"><i className="fas fa-envelope"></i></a>
           </div>
         </div>
       </div>
