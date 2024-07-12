@@ -22,6 +22,7 @@
     height: auto;
     margin-left: 1rem;
     border-radius: 8px;
+    transition: transform 0.3s ease; /* Add a transition for smoother animation */
   }
   
   .content-section.reverse .content-image {
@@ -36,6 +37,10 @@
     margin: 0;
   }
   
+  .content-section h1 {
+    display: none; /* Hide headings by default */
+  }
+  
   .content-section img {
     width: 100%;
   }
@@ -46,12 +51,11 @@
     }
   }
   
-  
   @media screen and (max-width: 850px) {
     .content-section,
     .content-section.reverse {
       flex-direction: column;
-      max-width: 400px;
+      max-width: 100%; /* Adjust for mobile screens */
     }
   
     .content-section p,
@@ -65,8 +69,24 @@
     .content-section.reverse .content-image {
       margin-right: 0;
     }
+  
     .content-section p {
-        display: none;
-       }
+      display: none; /* Hide paragraphs on mobile screens */
+    }
+  
+    .content-section h1 {
+      display: block; /* Show headings on mobile screens */
+      width: 100%; /* Ensure headings take full width */
+      margin: 1rem 0; /* Add margin for spacing */
+      font-size: 1.5rem; /* Adjust font size for headings */
+    }
+  
+    .content-image {
+      transform: scale(1); /* Reset transform for initial state */
+    }
+  
+    .content-image:hover {
+      transform: scale(1.1); /* Scale image on hover for a zoom effect */
+    }
   }
   
