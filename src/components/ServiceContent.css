@@ -1,11 +1,8 @@
 .service-content {
     padding: 50px 20px;
-    
     color: #fff;
     text-align: center;
 }
-
-
 
 .service-title {
     font-size: 2.5rem;
@@ -52,6 +49,7 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: inline-block; /* Ensure button is visible */
 }
 
 .service-card button:hover {
@@ -73,6 +71,7 @@
     display: flex; /* Ensure flex layout */
     justify-content: flex-start; /* Start from the left */
 }
+
 .goals-carousel {
     overflow-x: auto; /* Enable horizontal scrolling */
     scroll-behavior: smooth; /* Smooth scrolling */
@@ -112,7 +111,6 @@
     margin-bottom: 20px;
 }
 
-
 /* Service Page styles */
 .service-page-container {
     max-width: 1000px;
@@ -124,4 +122,30 @@
 .additional-content {
     margin-top: 40px;
     /* Additional styles for other content on the service page */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%; /* Make cards full-width on mobile */
+    }
+
+    .service-card img {
+        margin-bottom: 15px; /* Increase space for smaller screens */
+    }
+
+    .service-card button {
+        width: 100%; /* Make button full-width on mobile */
+        padding: 15px; /* Increase padding for better touch targets */
+    }
+
+    .service-title {
+        font-size: 2rem; /* Adjust title size for mobile */
+    }
+
+    .service-points {
+        flex-direction: column; /* Stack points vertically on mobile */
+        max-height: none; /* Remove height restriction */
+        overflow-x: hidden; /* Disable horizontal scrolling */
+    }
 }

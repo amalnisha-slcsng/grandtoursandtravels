@@ -16,10 +16,10 @@ const SocialMediaIcons = () => {
       <div className="social-icon" onClick={() => handleOpenLink('https://www.instagram.com')}>
         <FaInstagram />
       </div>
-      <div className="social-icon" onClick={() => handleOpenLink('https://wa.me/yourphonenumber')}>
+      <div className="social-icon" onClick={() => handleOpenLink('https://wa.me/7598283292')}>
         <FaWhatsapp />
       </div>
-      <div className="social-icon" onClick={() => handleOpenLink('mailto:youremail@gmail.com')}>
+      <div className="social-icon" onClick={() => handleOpenLink('mailto:grandtravelsmadurai@gmail.com')}>
         <FaEnvelope />
       </div>
     </div>
