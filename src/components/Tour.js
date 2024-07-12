@@ -5,7 +5,6 @@ import familyImage from '../assets/family.jpg';
 import friendsImage from '../assets/friends.jpg';
 import templesImage from '../assets/templess.jpg';
 import keralaImage from '../assets/keralas.png';
-import kanniyakumariImage from '../assets/kanniyakumari.webp';
 import maduraiImage from '../assets/maduraii.jpg';
 import chennaiImage from '../assets/chennai.jpg';
 import coimbatoreImage from '../assets/coimbatore.jpg';
@@ -28,7 +27,6 @@ const Tour = () => {
     { image: friendsImage, heading: 'Friends Tour Package', text: 'Have fun and create memories with friends on our friends tour packages.' },
     { image: templesImage, heading: 'Temples Tour Package', text: 'Explore spiritual destinations with our temples tour packages.' },
     { image: keralaImage, heading: 'Kerala Tour Package', text: 'Discover the beauty of Kerala with our comprehensive tour packages.' },
-    { image: kanniyakumariImage, heading: 'Kanyakumari Tour Package', text: 'Visit the southernmost tip of India with our Kanyakumari tour packages.' },
   ];
 
   useEffect(() => {
