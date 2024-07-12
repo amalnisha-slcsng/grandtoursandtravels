@@ -65,5 +65,8 @@
     .content-section.reverse .content-image {
       margin-right: 0;
     }
+    .content-section p {
+        display: none;
+       }
   }
   
