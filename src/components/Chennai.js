@@ -13,7 +13,7 @@ import './MaduraiStyles.css';
 
 const Chennai = () => {
   return (
-    <div className="chennai-page">
+    <div className="madurai-page">
       <h1>Chennai</h1>
       <p>The vibrant capital of Tamil Nadu. Experience the bustling city life and beautiful beaches.</p>
       
