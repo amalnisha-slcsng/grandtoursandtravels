@@ -71,7 +71,7 @@
     
     .t-card {
         width: 100%; /* Adjust width to maintain consistency */
-        max-width: 400px; /* Set a maximum width for the card */
+        max-width: 500px; /* Set a maximum width for the card */
         margin-bottom: 1.5rem;
     }
 }
