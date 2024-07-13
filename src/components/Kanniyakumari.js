@@ -5,7 +5,7 @@ import kanniyakumari from '../assets/banner.png';
 import beach1 from '../assets/beach6.jpg'; // Update these paths to appropriate images for Kanniyakumari
 import beach2 from '../assets/beach4.jpg';
 import beach3 from '../assets/beach5.webp';
-import './KanniyakumariStyles.css'; // Ensure the path is correct
+import './KutralamStyles.css'; // Ensure the path is correct
 
 const Kanniyakumari = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import TripData from './TripData';
-import './TripStyles.css'; // Ensure correct path
+import TripData from '../components/TripData';
+import '../components/TripStyles.css'; // Ensure correct path
 
 import place5 from '../assets/Kutralam.jpg';
 import place6 from '../assets/kanniyakumari.webp';
