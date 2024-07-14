@@ -111,6 +111,14 @@
   background-color: #0056b3;
 }
 
+.most-visited-places:link{
+  text-decoration: none;
+}
+
+.most-visited-places a{
+  text-decoration: none;
+}
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .most-visited-places h1 {

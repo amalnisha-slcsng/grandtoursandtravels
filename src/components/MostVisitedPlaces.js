@@ -74,14 +74,14 @@ const MostVisitedPlaces = () => {
       <h1>Most Visited Places</h1>
       <div className="place-cards" ref={placesRef}>
         {places.map((place, index) => (
-          <div key={index} className="place-card">
+          <Link key={index} to={place.path} className="place-card">
             <div className="place-image">
               <img src={place.image} alt={place.heading} />
             </div>
             <h4>{place.heading}</h4>
             <p>{place.text}</p>
             <button className="book-now-button" onClick={() => handleBookNow(place.heading)}>Book Now</button>
-          </div>
+          </Link>
         ))}
       </div>
       <div className="arrow arrow-left" onClick={scrollLeft}>
