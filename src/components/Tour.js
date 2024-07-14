@@ -12,7 +12,9 @@ import coimbatoreImage from '../assets/coimbatore.jpg';
 import mosqueImage from '../assets/mosque.jpg';
 import bachelorImage from '../assets/bachelor.jpg';
 import honeymoonImage from '../assets/honeymoon.jpg';
-import kanyakumariImage from '../assets/kanniyakumari.webp'; // Add the import for the Kanyakumari image
+import kanyakumariImage from '../assets/kanniyakumari.webp';
+import kodaikanalImage from '../assets/kodikanal.jpg'; // Add the import for the Kodaikanal image
+import ootyImage from '../assets/ooty.jpg'; // Add the import for the Ooty image
 
 const Tour = () => {
   const tourCardsRef = useRef(null);
@@ -28,7 +30,9 @@ const Tour = () => {
     { image: friendsImage, heading: 'Friends Tour Package', text: 'Have fun and create memories with friends on our friends tour packages.' },
     { image: templesImage, heading: 'Temples Tour Package', text: 'Explore spiritual destinations with our temples tour packages.' },
     { image: keralaImage, heading: 'Kerala Tour Package', text: 'Discover the beauty of Kerala with our comprehensive tour packages.' },
-    { image: kanyakumariImage, heading: 'Kanyakumari Tour Package', text: 'Explore the scenic beauty and cultural heritage of Kanyakumari.' }, // Add Kanyakumari tour package
+    { image: kanyakumariImage, heading: 'Kanyakumari Tour Package', text: 'Explore the scenic beauty and cultural heritage of Kanyakumari.' },
+    { image: kodaikanalImage, heading: 'Kodaikanal Tour Package', text: 'Experience the scenic beauty of Kodaikanal with our tour packages.' }, // Add Kodaikanal tour package
+    { image: ootyImage, heading: 'Ooty Tour Package', text: 'Discover the Queen of Hill Stations with our Ooty tour packages.' }, // Add Ooty tour package
   ];
 
   useEffect(() => {

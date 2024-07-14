@@ -58,8 +58,29 @@
     text-decoration: none; /* Remove underline from links */
 }
 
+/* Responsive Design */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
+    .trip {
+        margin: 4rem 4rem;
+    }
+    
+    .t-card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .trip {
+        margin: 4rem 3rem;
+    }
+    
+    .t-card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .trip {
         margin: 4rem 2rem;
     }
@@ -74,5 +95,38 @@
         max-width: 500px; /* Set a maximum width for the card */
         margin-bottom: 1.5rem;
     }
+    
+    .t-image {
+        height: 250px; /* Increase the image height for smaller tablets */
+    }
 }
 
+@media screen and (max-width: 576px) {
+    .trip {
+        margin: 2rem 1rem;
+    }
+    
+    .t-card {
+        width: 100%; /* Adjust width to maintain consistency */
+        max-width: 100%; /* Set the maximum width to full width */
+        margin-bottom: 1.5rem;
+    }
+    
+    .t-image {
+        height: 300px; /* Increase the image height for mobile view */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .trip {
+        margin: 1rem 0.5rem;
+    }
+    
+    .t-card {
+        padding: 0.8rem 0.5rem; /* Adjust padding for very small screens */
+    }
+    
+    .t-image {
+        height: 250px; /* Adjust image height for very small screens */
+    }
+}

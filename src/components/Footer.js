@@ -2,6 +2,27 @@ import React from 'react';
 import './FooterStyles.css';
 
 const Footer = () => {
+  const handleClick = (platform) => {
+    const message = encodeURIComponent("I am interested in traveling with Grand Tours and Travels.");
+    
+    switch (platform) {
+      case 'Facebook':
+        window.location.href = 'https://facebook.com';
+        break;
+      case 'WhatsApp':
+        window.location.href = `https://wa.me/917598283292?text=${message}`;
+        break;
+      case 'Instagram':
+        window.location.href = 'https://instagram.com';
+        break;
+      case 'Email':
+        window.location.href = `mailto:grandtravelsmadurai@gmail.com?subject=Travel Inquiry&body=${message}`;
+        break;
+      default:
+        alert(`You are being redirected to our ${platform} page! Stay tuned for more travel updates and offers from Grand Tours & Travels.`);
+    }
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -29,10 +50,10 @@ const Footer = () => {
           <p>Email: grandtravelsmadurai@gmail.com</p>
           <p>Phone: +91 7598283292</p>
           <div className="socials">
-            <a href="https://facebook.com"><i className="fab fa-facebook-f"></i></a>
-            <a href="https://whatsapp.com"><i className="fab fa-whatsapp"></i></a>
-            <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
-            <a href="/"><i className="fas fa-envelope"></i></a>
+            <a href="https://facebook.com" onClick={() => handleClick('Facebook')}><i className="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/917598283292?text=I%20am%20interested%20in%20traveling%20with%20Grand%20Tours%20and%20Travels." onClick={() => handleClick('WhatsApp')}><i className="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com" onClick={() => handleClick('Instagram')}><i className="fab fa-instagram"></i></a>
+            <a href="mailto:grandtravelsmadurai@gmail.com?subject=Travel Inquiry&body=I am interested in traveling with Grand Tours and Travels." onClick={() => handleClick('Email')}><i className="fas fa-envelope"></i></a>
           </div>
         </div>
       </div>

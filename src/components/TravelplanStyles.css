@@ -76,6 +76,7 @@
 
 .book-now-button:hover {
     background-color: #0a8a99;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
 
 /* Animation keyframes */
@@ -130,4 +131,23 @@
         width: 100%; /* Full width for mobile */
         margin-bottom: 20px;
     }
+}
+
+/* Additional animations for clickability */
+.package:active {
+    transform: translateY(-2px); /* Slightly lift on active state */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Adjust shadow on active state */
+}
+
+.package:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 4px rgba(14, 181, 187, 0.3); /* Custom focus outline */
+}
+
+.package img:hover {
+    transform: scale(1.05); /* Slight zoom effect on image hover */
+}
+
+.package p:hover {
+    color: #333; /* Darken text color on hover for readability */
 }

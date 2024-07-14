@@ -1,4 +1,7 @@
+/* General styles for MostVisitedPlaces component */
 .most-visited-places {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
   position: relative;
@@ -30,12 +33,15 @@
   border: 1px solid #ddd; /* Light gray border */
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 10px; /* Reduced padding */
   width: 200px;
   text-align: left;
   transition: transform 0.3s, box-shadow 0.3s;
   flex: 0 0 auto;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures button is at the bottom */
 }
 
 .place-card:hover {
@@ -43,14 +49,15 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.place-image {
+  height: 120px; /* Reduced height for the image container */
+  overflow: hidden;
+}
+
 .place-image img {
   width: 100%;
   height: auto;
   transition: transform 0.3s;
-}
-
-.place-card:hover .place-image img {
-  transform: scale(1.1);
 }
 
 .place-card h4 {
@@ -85,15 +92,26 @@
   right: 10px;
 }
 
-/* Remove underline from links */
-.place-card a {
-  text-decoration: none;
+/* Styles for Book Now button */
+.book-now-button {
+  display: block; /* Changed to block to center horizontally */
+  margin: auto; /* Centers horizontally */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
-.place-card:link{
-  text-decoration: none;
+.book-now-button:hover {
+  background-color: #0056b3;
 }
 
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
   .most-visited-places h1 {
     font-size: 2.5em;

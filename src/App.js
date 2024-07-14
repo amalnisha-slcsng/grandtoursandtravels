@@ -1,14 +1,13 @@
-import './App.css';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import './App.css';
 import Home from './routes/Home';
 import About from './routes/About';
 import Services from './routes/Services';
 import Contact from './routes/Contact';
-import CallIcon from './components/CallIcon'; // Import the CallIcon component
-import SocialMediaIcons from './components/SocialMediaIcons'; // Import SocialMediaIcons component
 import TravelPlan from './routes/TravelPlan'; // Replace with your actual component path
 import Trip from './routes/Trip';
-import Kutralam from './components/Kutralam'; // Import Kutralam component
+import Kutralam from './components/Kutralam';
 import Kanniyakumari from './components/Kanniyakumari';
 import Kerala from './components/Kerala';
 import Madurai from './components/Madurai';
@@ -26,6 +25,14 @@ import Dindigul from './components/Dindigul';
 import Kovalam from './components/Kovalam';
 import Sollavanthan from './components/Sollavanthan';
 import Alaganalur from './components/Alaganalur';
+import Puducherry from './components/Puducherry'; // Import Puducherry component
+import Kodaikanal from './components/Kodaikanal'; // Import Kodaikanal component
+import Ooty from './components/Ooty'; // Import Ooty component
+import Kumbakonam from './components/Kumbakonam'; // Import Kumbakonam component
+import Thoothukudi from './components/Thoothukudi'; // Import Thoothukudi component
+import MostVisitedPlaces from './components/MostVisitedPlaces'; // Import MostVisitedPlaces component
+import CallIcon from './components/CallIcon';
+import SocialMediaIcons from './components/SocialMediaIcons';
 
 function App() {
   return (
@@ -55,6 +62,12 @@ function App() {
         <Route path="/kovalam" element={<Kovalam />} />
         <Route path="/sollavanthan" element={<Sollavanthan />} />
         <Route path="/alaganalur" element={<Alaganalur />} />
+        <Route path="/puducherry" element={<Puducherry />} />
+        <Route path="/kodaikanal" element={<Kodaikanal />} />
+        <Route path="/ooty" element={<Ooty />} />
+        <Route path="/kumbakonam" element={<Kumbakonam />} />
+        <Route path="/thoothukudi" element={<Thoothukudi />} /> {/* Add Thoothukudi route */}
+        <Route path="/most-visited-places" element={<MostVisitedPlaces />} />
       </Routes>
       <div>
         <SocialMediaIcons />
