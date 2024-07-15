@@ -78,7 +78,7 @@
   font-size: 2rem;
   color: #000; /* Black color for arrows */
   cursor: pointer;
-  z-index: 0;
+  z-index: 1;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
   padding: 10px;
@@ -103,19 +103,24 @@
   font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: auto; /* Ensures button is at the bottom */
 }
 
 .book-now-button:hover {
   background-color: #0056b3;
+  transform: scale(1.05); /* Add scale effect on hover */
 }
 
-.most-visited-places:link{
+.book-now-button:active {
+  transform: scale(1); /* Remove scale effect on click */
+}
+
+.most-visited-places:link {
   text-decoration: none;
 }
 
-.most-visited-places a{
+.most-visited-places a {
   text-decoration: none;
 }
 
@@ -124,7 +129,7 @@
   .most-visited-places h1 {
     font-size: 2.5em;
   }
-  
+
   .place-cards {
     gap: 10px;
   }

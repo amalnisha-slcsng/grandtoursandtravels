@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './MostVisitedPlaces.css';
 import sollavanthanImage from '../assets/sollavanthan.jpg';
@@ -14,7 +14,6 @@ import thanjavurImage from '../assets/thanjavur.webp';
 import trichyImage from '../assets/trichy.jpg';
 import dindigulImage from '../assets/dindigul.jpg';
 import maduraiImage from '../assets/maduraii.jpg'; // Add Madurai image import
-import alaganalurImage from '../assets/allaganallur.jpeg'; // Add Alaganalur image import
 import chennaiImage from '../assets/chennai.jpg'; // Add Chennai image import
 import thoothukudiImage from '../assets/thoothukudi.jpg'; // Add Thoothukudi image import
 import kumbakonamImage from '../assets/kumbakonam.webp'; // Add Kumbakonam image import
@@ -43,7 +42,6 @@ const MostVisitedPlaces = () => {
     { image: dindigulImage, heading: 'Dindigul', text: 'Famous for locks and biryani.', path: '/dindigul' },
     { image: kovalamImage, heading: 'Kovalam', text: 'Known for its beautiful beaches.', path: '/kovalam' },
     { image: sollavanthanImage, heading: 'Sollavanthan', text: 'A charming village.', path: '/sollavanthan' },
-    { image: alaganalurImage, heading: 'Alaganalur', text: 'Known for its serene environment.', path: '/alaganalur' },
     { image: thoothukudiImage, heading: 'Thoothukudi', text: 'Famous for its port and Pearl Fishery.', path: '/thoothukudi' },
     { image: kumbakonamImage, heading: 'Kumbakonam', text: 'Renowned for its temples and Mahamaham festival.', path: '/kumbakonam' },
   ];
@@ -68,6 +66,21 @@ const MostVisitedPlaces = () => {
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (placesRef.current) {
+        placesRef.current.scrollBy({
+          left: 300,
+          behavior: 'smooth',
+        });
+        if (placesRef.current.scrollLeft + placesRef.current.offsetWidth >= placesRef.current.scrollWidth) {
+          placesRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+        }
+      }
+    }, 5000); // Change slide every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="most-visited-places">

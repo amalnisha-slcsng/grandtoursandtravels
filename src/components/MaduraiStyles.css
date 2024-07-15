@@ -8,7 +8,11 @@
 .madurai-page h1 {
   font-size: 3em;
   margin-bottom: 20px;
-  color: #2a2a2a;
+  color: #fff; /* White text color for contrast */
+  background-color: #0C6D70; /* Use the specified color for background */
+  padding: 10px 20px; /* Padding to ensure text is comfortably spaced */
+  display: inline-block; /* Ensures the background color covers the entire width of the text */
+  border-radius: 8px; /* Rounded corners for a softer look */
 }
 
 .madurai-page p {
@@ -33,9 +37,10 @@
   padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
   width: calc(50% - 20px); /* Two columns per row on larger screens */
-  max-width: 900px; /* Maximum width */
+  max-width: 500px; /* Maximum width */
   margin-left: auto;
   margin-right: auto;
+  flex-direction: row; /* Ensure horizontal layout for larger screens */
 }
 
 .place:hover {
@@ -89,6 +94,10 @@
   .place {
     width: calc(100% - 40px); /* Increase size for larger screens */
     max-width: 1200px; /* Increased max-width for larger screens */
+  }
+
+  .place:nth-child(even) {
+    flex-direction: row-reverse; /* Flip the layout for even elements */
   }
 
   .place img {

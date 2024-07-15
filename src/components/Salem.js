@@ -1,97 +1,72 @@
-import React, { useRef } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import './MostVisitedPlaces.css';
-import sollavanthanImage from '../assets/sollavanthan.jpg';
-import kovalamImage from '../assets/kovalam.jpg';
-import rameshwaramImage from '../assets/rameshwaram.webp';
-import trivandrumImage from '../assets/trivandrum.jpg';
-import palaniImage from '../assets/palani.jpg';
-import coimbatoreImage from '../assets/coimbatorr.jpg';
-import salemImage from '../assets/salem.webp';
-import tiruchirappalliImage from '../assets/tiruchirappalli.jpg';
-import tirunelveliImage from '../assets/tirunelvel.jpeg';
-import thanjavurImage from '../assets/thanjavur.webp';
-import trichyImage from '../assets/trichy.jpg';
-import dindigulImage from '../assets/dindigul.jpg';
-import maduraiImage from '../assets/maduraii.jpg'; // Add Madurai image import
-import alaganalurImage from '../assets/allaganallur.jpeg'; // Add Alaganalur image import
-import chennaiImage from '../assets/chennai.jpg'; // Add Chennai image import
-import thoothukudiImage from '../assets/thoothukudi.jpg'; // Add Thoothukudi image import
-import kumbakonamImage from '../assets/kumbakonam.webp'; // Add Kumbakonam image import
-import puducherryImage from '../assets/puducherry.jpg'; // Add Puducherry image import
-import kodikanalImage from '../assets/kodikanal.jpg'; // Add Kodaikanal image import
-import ootyImage from '../assets/ooty.jpg'; // Add Ooty image import
+// src/pages/SalemPage.js
+import React from 'react';
+import YercaudImage from '../assets/Yercaud.jpg';
+import KiliyurFallsImage from '../assets/kiliyur_falls.jpg';
+import LingamTempleImage from '../assets/salem_place4.jpg';
+import SugavaneswararTempleImage from '../assets/sugavaneswarar_temple.jpg';
+import MetturDamImage from '../assets/mettur_dam.webp';
+import KumaragiriHillImage from '../assets/salem_place6.jpg';
+import './MaduraiStyles.css'; // Ensure you have styles for Salem page
 
-const MostVisitedPlaces = () => {
-  const placesRef = useRef(null);
-
-  const places = [
-    { image: maduraiImage, heading: 'Madurai', text: 'Rich in cultural heritage.', path: '/madurai' },
-    { image: chennaiImage, heading: 'Chennai', text: 'The vibrant capital of Tamil Nadu.', path: '/chennai' },
-    { image: coimbatoreImage, heading: 'Coimbatore', text: 'Known for its textiles.', path: '/coimbatore' },
-    { image: puducherryImage, heading: 'Pondicherry', text: 'A former French colony known for its architecture and beaches.', path: '/puducherry' },
-    { image: kodikanalImage, heading: 'Kodaikanal', text: 'Famous hill station with scenic views.', path: '/kodaikanal' },
-    { image: ootyImage, heading: 'Ooty', text: 'Queen of hill stations.', path: '/ooty' },
-    { image: salemImage, heading: 'Salem', text: 'Famous for its mangoes.', path: '/salem' },
-    { image: rameshwaramImage, heading: 'Rameshwaram', text: 'A holy pilgrimage site.', path: '/rameshwaram' },
-    { image: tiruchirappalliImage, heading: 'Tiruchirappalli', text: 'Home to Rockfort Temple.', path: '/tiruchirappalli' },
-    { image: trivandrumImage, heading: 'Trivandrum', text: 'The capital of Kerala.', path: '/trivandrum' },
-    { image: palaniImage, heading: 'Palani', text: 'Known for its Murugan Temple.', path: '/palani' },
-    { image: tirunelveliImage, heading: 'Tirunelveli', text: 'Famous for halwa.', path: '/tirunelveli' },
-    { image: thanjavurImage, heading: 'Thanjavur', text: 'Renowned for Brihadeeswara Temple.', path: '/thanjavur' },
-    { image: trichyImage, heading: 'Trichy', text: 'Known for its educational institutions.', path: '/trichy' },
-    { image: dindigulImage, heading: 'Dindigul', text: 'Famous for locks and biryani.', path: '/dindigul' },
-    { image: kovalamImage, heading: 'Kovalam', text: 'Known for its beautiful beaches.', path: '/kovalam' },
-    { image: sollavanthanImage, heading: 'Sollavanthan', text: 'A charming village.', path: '/sollavanthan' },
-    { image: alaganalurImage, heading: 'Alaganalur', text: 'Known for its serene environment.', path: '/alaganalur' },
-    { image: thoothukudiImage, heading: 'Thoothukudi', text: 'Famous for its port and Pearl Fishery.', path: '/thoothukudi' },
-    { image: kumbakonamImage, heading: 'Kumbakonam', text: 'Renowned for its temples and Mahamaham festival.', path: '/kumbakonam' },
-  ];
-
-  const scrollLeft = () => {
-    placesRef.current.scrollBy({
-      left: -200,
-      behavior: 'smooth',
-    });
-  };
-
-  const scrollRight = () => {
-    placesRef.current.scrollBy({
-      left: 200,
-      behavior: 'smooth',
-    });
-  };
-
-  const handleBookNow = (placeName) => {
-    const whatsappNumber = '7598283292';
-    const message = `I am interested in visiting ${placeName} with Grand Tours and Travels.`;
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-  };
-
+const Salem = () => {
   return (
-    <div className="most-visited-places">
-      <h1>Most Visited Places</h1>
-      <div className="place-cards" ref={placesRef}>
-        {places.map((place, index) => (
-          <div key={index} className="place-card">
-            <div className="place-image">
-              <img src={place.image} alt={place.heading} />
-            </div>
-            <h4>{place.heading}</h4>
-            <p>{place.text}</p>
-            <button className="book-now-button" onClick={() => handleBookNow(place.heading)}>Book Now</button>
-          </div>
-        ))}
+    <div className="madurai-page">
+      <h1>Salem</h1>
+      <p>Explore the famous places in Salem, known for its rich history and cultural heritage.</p>
+      
+      <h2>Famous Places in Salem</h2>
+      
+      <div className="place">
+        <img src={YercaudImage} alt="Yercaud" />
+        <div className="place-info">
+          <h3>Yercaud</h3>
+          <p>A beautiful hill station with stunning views and pleasant weather.</p>
+        </div>
       </div>
-      <div className="arrow arrow-left" onClick={scrollLeft}>
-        &#8592;
+      
+      <div className="place">
+        <img src={KiliyurFallsImage} alt="Kiliyur Falls" />
+        <div className="place-info">
+          <h3>Kiliyur Falls</h3>
+          <p>A breathtaking waterfall located in the Servaroyan hill range.</p>
+        </div>
       </div>
-      <div className="arrow arrow-right" onClick={scrollRight}>
-        &#8594;
+      
+      <div className="place">
+        <img src={LingamTempleImage} alt="1008 Lingam Temple" />
+        <div className="place-info">
+          <h3>1008 Lingam Temple</h3>
+          <p>A unique temple with 1008 Shiva Lingams arranged in a serene environment.</p>
+        </div>
+      </div>
+      
+      <div className="place">
+        <img src={SugavaneswararTempleImage} alt="Arulmigu Sugavaneswarar Swamy Temple" />
+        <div className="place-info">
+          <h3>Arulmigu Sugavaneswarar Swamy Temple</h3>
+          <p>An ancient temple dedicated to Lord Shiva.</p>
+        </div>
+      </div>
+      
+      <div className="place">
+        <img src={MetturDamImage} alt="Mettur Dam" />
+        <div className="place-info">
+          <h3>Mettur Dam</h3>
+          <p>One of the largest dams in India, offering scenic views and a peaceful environment.</p>
+        </div>
+      </div>
+      
+    
+      
+      <div className="place">
+        <img src={KumaragiriHillImage} alt="Kumaragiri Hill" />
+        <div className="place-info">
+          <h3>Kumaragiri Hill</h3>
+          <p>A perfect spot for trekking and nature enthusiasts.</p>
+        </div>
       </div>
     </div>
   );
 };
 
-export default MostVisitedPlaces;
+export default Salem;

@@ -24,7 +24,6 @@ import Trichy from './components/Trichy';
 import Dindigul from './components/Dindigul';
 import Kovalam from './components/Kovalam';
 import Sollavanthan from './components/Sollavanthan';
-import Alaganalur from './components/Alaganalur';
 import Puducherry from './components/Puducherry'; // Import Puducherry component
 import Kodaikanal from './components/Kodaikanal'; // Import Kodaikanal component
 import Ooty from './components/Ooty'; // Import Ooty component
@@ -61,7 +60,6 @@ function App() {
         <Route path="/dindigul" element={<Dindigul />} />
         <Route path="/kovalam" element={<Kovalam />} />
         <Route path="/sollavanthan" element={<Sollavanthan />} />
-        <Route path="/alaganalur" element={<Alaganalur />} />
         <Route path="/puducherry" element={<Puducherry />} />
         <Route path="/kodaikanal" element={<Kodaikanal />} />
         <Route path="/ooty" element={<Ooty />} />

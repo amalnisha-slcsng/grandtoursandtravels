@@ -61,7 +61,6 @@ const Coimbatore = () => {
         </div>
       </div>
 
-      <h2>Famous Temples in Coimbatore</h2>
       
       <div className="place">
         <img src={IshaImage} alt="Isha Yoga Center" />
