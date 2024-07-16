@@ -32,10 +32,14 @@ import Thoothukudi from './components/Thoothukudi'; // Import Thoothukudi compon
 import MostVisitedPlaces from './components/MostVisitedPlaces'; // Import MostVisitedPlaces component
 import CallIcon from './components/CallIcon';
 import SocialMediaIcons from './components/SocialMediaIcons';
+import ScrollToTop from './components/ScrollToTop'; // Import ScrollToTop
+
 
 function App() {
   return (
     <div className="App">
+            <ScrollToTop /> {/* Include ScrollToTop at the top level */}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

@@ -51,7 +51,7 @@
 
 .hero-text .show {
   text-decoration: none;
-  background-color: #0C6D70;
+  background-color: #0095AF;
   padding: 1rem 2rem;
   border-radius: 6px;
   font-size: 1.1rem;
@@ -63,7 +63,7 @@
 }
 
 .hero-text .show:hover {
-  background-color: #0a8488;
+  background-color: #047e94;
   transform: scale(1.05); /* Slightly enlarge on hover */
 }
 

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './Navbarstyles.css'; // Assuming it's your Navbar styles
 import { Link } from 'react-router-dom';
 import { MenuItems } from './MenuItems';
-import logo from '../assets/logo.jpg'; // Import your logo image
+import gttLogo from '../assets/gttlogo.png';
+import frontLogo from '../assets/frontlogo.png'; // Import your logo images
 
 const Navbar = ({ sticky }) => {
   const [clicked, setClicked] = useState(false);
@@ -14,10 +15,10 @@ const Navbar = ({ sticky }) => {
   return (
     <nav className={`NavbarItems ${sticky ? 'scrolled' : ''}`}>
       <div className="navbar-logo">
-        <img src={logo} alt="Grand Tours & Travels Logo" className="logo-img" />
+        <img src={gttLogo} alt="Grand Tours & Travels Logo" className="logo-img mobile-logo" />
+        <img src={frontLogo} alt="Front Logo" className="logo-img large-screen-logo" />
         <div className="large-screen-only">
-  
-          <span className="highlight" style={{color:"#0c6d70",padding:"4px"}}>GRAND</span>
+          <span className="highlight" style={{ color: "#0095AF", padding: "4px", fontWeight: "bold" }}>GRAND</span>
           <span className="nav-title">Tours & Travels</span>
         </div>
       </div>

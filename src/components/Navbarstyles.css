@@ -29,49 +29,35 @@
 }
 
 .logo-img {
-  display: inline-block;
-  max-width: 120px;
+  max-width: 70px; /* Adjust as per your design */
   margin-right: 10px;
+  margin-top: 10.5px;
 }
 
-.highlight {
-  font-weight: bold;
-  font-size: 1.2em;
+.mobile-logo {
+  display: inline-block; /* Show mobile logo by default */
 }
 
-.nav-title {
-  font-size: 1.2em;
+.large-screen-logo {
+  display: none; /* Hide large screen logo by default */
 }
 
 .large-screen-only {
-  display: inline-block;
+  display: none; /* Hide on large screens by default */
 }
 
 @media (min-width: 769px) {
   .large-screen-only {
-    display: flex;
+    display: flex; /* Show on large screens */
     align-items: center;
   }
 
-  /* .logo-img {
-    display: none; Commented out this rule to show the logo on large screens
-    max-width: 120px; 
-  } */
-}
-
-@media (max-width: 768px) {
-  .navbar-logo {
-    justify-content: center; /* Center align on mobile */
+  .mobile-logo {
+    display: none; /* Hide mobile logo on large screens */
   }
 
-  .logo-img {
-    display: inline-block; /* Show logo on mobile */
-    max-width: 120px; /* Adjust max-width as per your design */
-  }
-
-  .highlight,
-  .nav-title {
-    display: none; /* Hide text highlight and title on mobile */
+  .large-screen-logo {
+    display: inline-block; /* Show large screen logo */
   }
 }
 
@@ -107,7 +93,7 @@
 }
 
 .nav-links:hover {
-  background-color: #0c6d70;
+  background-color: #0095AF;
   color: #fff;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
@@ -167,7 +153,7 @@ button:hover {
   }
 
   .nav-links:hover {
-    background-color: #0c6d70;
+    background-color: #0095AF;
     transition: none;
   }
 

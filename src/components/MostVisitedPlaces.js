@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 import './MostVisitedPlaces.css';
 import sollavanthanImage from '../assets/sollavanthan.jpg';
 import kovalamImage from '../assets/kovalam.jpg';
@@ -13,13 +13,13 @@ import tirunelveliImage from '../assets/tirunelvel.jpeg';
 import thanjavurImage from '../assets/thanjavur.webp';
 import trichyImage from '../assets/trichy.jpg';
 import dindigulImage from '../assets/dindigul.jpg';
-import maduraiImage from '../assets/maduraii.jpg'; // Add Madurai image import
-import chennaiImage from '../assets/chennai.jpg'; // Add Chennai image import
-import thoothukudiImage from '../assets/thoothukudi.jpg'; // Add Thoothukudi image import
-import kumbakonamImage from '../assets/kumbakonam.webp'; // Add Kumbakonam image import
-import puducherryImage from '../assets/puducherry.jpg'; // Add Puducherry image import
-import kodikanalImage from '../assets/kodikanal.jpg'; // Add Kodaikanal image import
-import ootyImage from '../assets/ooty.jpg'; // Add Ooty image import
+import maduraiImage from '../assets/maduraii.jpg';
+import chennaiImage from '../assets/chennai.jpg';
+import thoothukudiImage from '../assets/thoothukudi.jpg';
+import kumbakonamImage from '../assets/kumbakonam.webp';
+import puducherryImage from '../assets/puducherry.jpg';
+import kodikanalImage from '../assets/kodikanal.jpg';
+import ootyImage from '../assets/ooty.jpg';
 
 const MostVisitedPlaces = () => {
   const placesRef = useRef(null);
@@ -97,11 +97,13 @@ const MostVisitedPlaces = () => {
           </Link>
         ))}
       </div>
-      <div className="arrow arrow-left" onClick={scrollLeft}>
-        &#8592;
-      </div>
-      <div className="arrow arrow-right" onClick={scrollRight}>
-        &#8594;
+      <div className="arrows">
+        <div className="arrow arrow-left" onClick={scrollLeft}>
+          <i className="fas fa-chevron-left"></i>
+        </div>
+        <div className="arrow arrow-right" onClick={scrollRight}>
+          <i className="fas fa-chevron-right"></i>
+        </div>
       </div>
     </div>
   );
