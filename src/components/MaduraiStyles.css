@@ -75,6 +75,10 @@
 }
 
 @media (max-width: 768px) {
+  .madurai-page h1 {
+    font-size: 2em; /* Adjust heading size for mobile screens */
+  }
+
   .place {
     width: calc(100% - 20px); /* Full width on smaller screens */
     max-width: 100%; /* Ensure full width on smaller screens */

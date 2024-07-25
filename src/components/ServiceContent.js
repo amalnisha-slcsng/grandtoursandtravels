@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './ServiceContent.css';
-import MiniImage from '../assets/minicars.jpeg';
+import MiniImage from '../assets/mini-carsss.jpg';
 import SedanImage from '../assets/shiftdesire.webp';
 import InnovaImage from '../assets/toyato.jpg';
 import TempoImage from '../assets/tempo.jpeg';
@@ -27,7 +27,7 @@ const ServiceContent = () => {
           </div>
           <div className="service-card">
             <img src={SedanImage} alt="Sedan Car" />
-            <h3>Shif desire(Day Rent)</h3>
+            <h3>Suzuki Swift Dzire(Day Rent)</h3>
             <p>We offer top-notch rental cabs at competitive prices to ensure a premium travel experience.</p>
             <p>Rent: 1500/-(A/C)</p>
             <p>Driver Bata: Rs. 300 (Rs.14/km)</p>
